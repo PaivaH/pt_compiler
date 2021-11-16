@@ -1,0 +1,11 @@
+inicio
+declara a,b,c;
+	escreva("Meu primeiro programa em ISI");
+	leia( a );
+	leia( b );
+	c := a + b * ( a * a);
+    se(2>5);
+    para(a; a>b; a+1);
+	escreva("O resultado da soma vale");
+	escreva( c );
+fim
