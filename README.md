@@ -37,5 +37,12 @@ Analisador Sintático
 (11) dif    -> !  
 (12) attr   -> :=  
 (13) Texto  -> “(0..9 | a..z | A..Z | ‘ ‘ | )+ ”  
+  
+O programa foi construido no openJDK8 e o programa antlr.jar na versão 2.7.6.  
+para executar o projeto execute os seguintes codigo:  
 
- 
+java -cp antlr.jar antlr.Tool gramatica.g  
+
+javac -cp antlr.jar:. *.java  
+
+java -cp antlr.jar:. PtCompilador < prog.pt  
