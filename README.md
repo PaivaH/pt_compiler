@@ -8,19 +8,19 @@ Este projeto utilizou a mesma gramatica definida pelo professor e com regras gra
 
 Analisador Sintático
 
- (01) Prog       -> programa Declara Bloco fimprog.
- (02) Declara    -> declare Id (, Id)* .
- (03) Bloco      -> (Cmd. )+
- (04) Cmd        -> CmdLeitura | CmdEscrita | CmdExpr | CmdIf
- (05) CmdLeitura -> leia( Id )
- (06) CmdEscrita -> escreva( Texto | Id )
- (07) CmdSe      -> se ( logica )
- (07) CmdPara    -> se 
- (09) CmdExpr    -> Id := Expr
- (10) Expr       -> Expr + Termo  | Expr – Termo  | Termo
- (11) Termo      -> Termo * Fator | Termo / Fator | Fator
- (12) logica     -> Fator > | < | = | ! Fator
- (13) Fator      -> Num | Id | ( Expr )
+(01) Prog       -> programa Declara Bloco fimprog.
+(02) Declara    -> declare Id (, Id)* .
+(03) Bloco      -> (Cmd. )+
+(04) Cmd        -> CmdLeitura | CmdEscrita | CmdExpr | CmdIf
+(05) CmdLeitura -> leia( Id )
+(06) CmdEscrita -> escreva( Texto | Id )
+(07) CmdSe      -> se ( logica )
+(07) CmdPara    -> para ( fator ; logica ;  expr )
+(09) CmdExpr    -> Id := Expr
+(10) Expr       -> Expr + Termo  | Expr – Termo  | Termo
+(11) Termo      -> Termo * Fator | Termo / Fator | Fator
+(12) logica     -> Fator > | < | = | ! Fator
+(13) Fator      -> Num | Id | ( Expr )
  
  Tokens
 
