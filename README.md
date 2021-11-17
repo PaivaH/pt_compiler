@@ -8,9 +8,9 @@ Este projeto utilizou a mesma gramatica definida pelo professor e com regras gra
 
 Analisador Sintático  
   
-(01) Prog       -> programa Declara Bloco fimprog.  
-(02) Declara    -> declare Id (, Id)* .  
-(03) Bloco      -> (Cmd. )+  
+(01) inicio       -> programa Declara Bloco ;  
+(02) Declara    -> declare Id (, Id)* ;  
+(03) Bloco      -> (Cmd. )+ fim  
 (04) Cmd        -> CmdLeitura | CmdEscrita | CmdExpr | CmdIf  
 (05) CmdLeitura -> leia( Id )  
 (06) CmdEscrita -> escreva( Texto | Id )  
